@@ -12,3 +12,4 @@ json_data = '{"Content-Type": "application/json", "X-UIPATH-TenantName": "Defaul
 headers = json.loads(json_data)
 json_data = '{"startInfo": {"ReleaseKey": "<<Your release key>>","Strategy": "ModernJobsCount", "JobsCount": 1,"InputArguments": "{}"}}'
 data = json.loads(json_data)
+requests.post(url, headers=headers, json=data)
